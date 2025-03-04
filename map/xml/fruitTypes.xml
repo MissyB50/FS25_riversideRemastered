@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../shared/xml/schema/fruitTypes.xsd">
+    <fruitTypes>
+        <fruitType Name="BARLEY"/>
+        <fruitType filename="foliage/canola/canola.xml"/>
+<!--         <fruitType filename="foliage/oat/oat.xml"/>
+        <fruitType filename="foliage/maize/maize.xml"/>
+        <fruitType filename="foliage/sunflower/sunflower.xml"/>
+        <fruitType filename="foliage/soybean/soybean.xml"/>
+        <fruitType filename="foliage/potato/potato.xml"/>
+        <fruitType filename="foliage/rice/rice.xml"/>
+        <fruitType filename="foliage/riceLongGrain/riceLongGrain.xml"/>
+        <fruitType filename="foliage/sugarbeet/sugarbeet.xml"/>
+        <fruitType filename="foliage/sugarcane/sugarcane.xml"/>
+        <fruitType filename="foliage/cotton/cotton.xml"/>
+        <fruitType filename="foliage/sorghum/sorghum.xml"/>
+        <fruitType filename="foliage/grape/grape.xml"/>
+        <fruitType filename="foliage/olive/olive.xml"/>
+        <fruitType filename="foliage/poplar/poplar.xml"/>
+        <fruitType filename="foliage/beetRoot/beetRoot.xml"/>
+        <fruitType filename="foliage/carrot/carrot.xml"/>
+        <fruitType filename="foliage/parsnip/parsnip.xml"/>
+        <fruitType filename="foliage/greenBean/greenBean.xml"/>
+        <fruitType filename="foliage/pea/pea.xml"/>
+        <fruitType filename="foliage/spinach/spinach.xml"/>
+        <fruitType filename="foliage/grass/grass.xml"/>
+        <fruitType filename="foliage/oilseedRadish/oilseedRadish.xml"/>
+        <fruitType filename="foliage/wheat.xml"/> -->
+    </fruitTypes>
+
+    <fruitTypeCategories>
+        <fruitTypeCategory name="GRAINHEADER">WHEAT BARLEY OAT CANOLA SOYBEAN SORGHUM RICELONGGRAIN</fruitTypeCategory>
+        <fruitTypeCategory name="MAIZEHEADER">MAIZE SUNFLOWER</fruitTypeCategory>
+        <fruitTypeCategory name="MAIZECUTTER">MAIZE WHEAT BARLEY OAT CANOLA SORGHUM SOYBEAN SUNFLOWER</fruitTypeCategory>
+        <fruitTypeCategory name="DIRECTCUTTER">GRASS WHEAT BARLEY OAT CANOLA SORGHUM SOYBEAN SUNFLOWER</fruitTypeCategory>
+        <fruitTypeCategory name="SOWINGMACHINE">WHEAT BARLEY OAT CANOLA RICELONGGRAIN OILSEEDRADISH GRASS PEA SPINACH</fruitTypeCategory>
+        <fruitTypeCategory name="SUGARCANE_PLANTER">SUGARCANE</fruitTypeCategory>
+        <fruitTypeCategory name="PLANTER">MAIZE SORGHUM SUNFLOWER SOYBEAN SUGARBEET COTTON GREENBEAN</fruitTypeCategory>
+        <fruitTypeCategory name="PLANTER_SMALL">CARROT PARSNIP BEETROOT SPINACH</fruitTypeCategory>
+        <fruitTypeCategory name="WEEDER">OILSEEDRADISH GRASS</fruitTypeCategory>
+        <fruitTypeCategory name="TOPLIFTINGHARVESTER">CARROT BEETROOT PARSNIP</fruitTypeCategory>
+        <fruitTypeCategory name="MOWER">GRASS WHEAT BARLEY OAT CANOLA SOYBEAN</fruitTypeCategory>
+        <fruitTypeCategory name="COMBINE_MOWER">WHEAT BARLEY OAT CANOLA SOYBEAN</fruitTypeCategory>
+    </fruitTypeCategories>
+
+    <fruitTypeConverters>
+        <fruitTypeConverter name="FORAGEHARVESTER">
+            <converter from="MAIZE" to="CHAFF" factor="7.8"/>
+            <converter from="GRASS" to="GRASS_WINDROW" factor="1.0"/>
+            <converter from="WHEAT" to="CHAFF" factor="4.0"/>
+            <converter from="BARLEY" to="CHAFF" factor="4.0"/>
+            <converter from="OAT" to="CHAFF" factor="4.0"/>
+            <converter from="CANOLA" to="CHAFF" factor="4.0"/>
+            <converter from="SUNFLOWER" to="CHAFF" factor="6.0"/>
+            <converter from="SOYBEAN" to="CHAFF" factor="4.0"/>
+            <converter from="SORGHUM" to="CHAFF" factor="4.0"/>
+            <converter from="POPLAR" to="WOODCHIPS" factor="3.0"/>
+        </fruitTypeConverter>
+        <fruitTypeConverter name="MOWER">
+            <converter from="GRASS" to="GRASS_WINDROW" factor="1.0"/>
+            <converter from="MEADOW" to="GRASS_WINDROW" factor="1.0"/>
+            <converter from="WHEAT" to="STRAW" factor="1.0"/>
+            <converter from="BARLEY" to="STRAW" factor="1.0"/>
+            <converter from="OAT" to="STRAW" factor="1.0"/>
+            <converter from="CANOLA" to="STRAW" factor="1.0"/>
+            <converter from="SOYBEAN" to="STRAW" factor="1.0"/>
+        </fruitTypeConverter>
+        <fruitTypeConverter name="COMBINE_MOWER">
+            <converter from="WHEAT" to="WHEAT_CUT" factor="1.0"/>
+            <converter from="BARLEY" to="BARLEY_CUT" factor="1.0"/>
+            <converter from="OAT" to="OAT_CUT" factor="1.0"/>
+            <converter from="CANOLA" to="CANOLA_CUT" factor="1.0"/>
+            <converter from="SOYBEAN" to="SOYBEAN_CUT" factor="1.0"/>
+        </fruitTypeConverter>
+    </fruitTypeConverters>
+</map>

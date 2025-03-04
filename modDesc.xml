@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="96">
+    <author>MissyB</author>
+    <version>1.0.0.0</version>
+    <title>
+        <en>Riverside Remastered</en>
+    </title>
+    <description>
+<en><![CDATA[Welcome back to Riverside Farms. This fictous map and has been completely overhauled to FS25 standards.
+
+Key features:
+- 77 of fields
+- 5 active farms for you to choose from
+- Multiple areas that with some Tender Love and Care (and a chainsaw) can be reformed into additional farm space
+- Custom made animal pens built into the map
+- 1 sawmills
+- 1 main forest location with additional woodland around map
+- 2 large areas to tantalise your creative side. Ideal for production chains or additional yard space
+- Plenty of storage space for the largest machines
+- Custom soil map for PF
+- Buy in bulk using the North and Mid Farm Shop buy points
+- Free Lime available at Farms shops
+- Reasonably priced Fert Seed and Herbicide also available
+]]></en>
+<de><![CDATA[Willkommen zurück bei Riverside Farms. Diese fiktive Karte wurde komplett nach FS22-Standards überarbeitet.
+
+Hauptmerkmale:
+
+- 77 Felder
+- 5 aktive Farmen zur Auswahl
+- Mehrere Bereiche, die mit etwas Liebe und Sorgfalt (und einer Kettensäge) in zusätzliche Farmflächen umgewandelt werden können
+- Speziell angefertigte Tierställe, die in die Karte integriert sind
+- 1 Sägewerk
+- 1 Hauptwald mit zusätzlichem Waldgebiet um die Karte herum
+- 2 große Flächen, die Ihre kreative Seite herausfordern. Ideal für Produktionsketten oder zusätzliche Hofflächen
+- Reichlich Lagerfläche für die größten Maschinen
+- Benutzerdefinierte Bodenkarte für PF
+- Großeinkauf in den Farmshops im Norden und in der Mitte
+- Kostenloser Kalk in den Farmshops erhältlich
+- Günstiges Düngemittel und Herbizid ebenfalls erhältlich
+]]></de>
+    </description>
+    <iconFilename>icon_map.png</iconFilename>
+    <multiplayer supported="true"/>
+    <maps>
+        <map id="SampleModMap" className="Mission00" filename="$dataS/scripts/mission00.lua" configFilename="map/xml/map.xml" defaultVehiclesXMLFilename="map/xml/vehicles.xml" defaultHandToolsXMLFilename="map/xml/handTools.xml" defaultPlaceablesXMLFilename="map/xml/placeables.xml" defaultItemsXMLFilename="map/xml/items.xml">
+            <title>
+                <en>Riverside Remastered</en>
+            </title>
+            <description>
+                <en>Welcome to Riverside Farm,  This is a fictous map.
+There's 5 farms to choose from. All anminal pens are built into the map for ease of use.  
+Riverside Farm has 5 farms 77 fields, with Pigs, Cows sheep and horse's.
+There is 3 placeable area on the map,
+2 new productions to use, Custom made lime production.</en>
+                <de>Willkommen bei Riverside . Dies ist eine fiktive Karte.
+Es stehen 5 Farmen zur Auswahl. Alle Tiergehege sind zur einfachen Verwendung in die Karte integriert.
+Riverside Farm hat 5 Farmen 77 Felder, mit Schweinen, Kühen, Schafen und Pferden.
+Es gibt 3 platzierbare Bereiche auf der Karte,
+2 neue Produktionen zum Einsatz,
+Maßgeschneiderte Kalkproduktion.</de>
+            </description>
+            <iconFilename>map_pre.view.png</iconFilename>
+        </map>
+    </maps>
+
+    <placeableTypes>
+        <type name="cowHusbandryBarnMilkManure" parent="baseHusbandry" filename="$dataS/scripts/vehicles/Vehicle.lua">
+            <specialization name="husbandryWater" />
+            <specialization name="husbandryMilk" />
+            <specialization name="husbandryStraw" />
+            <specialization name="husbandryLiquidManure" />
+            <specialization name="manureHeap" />
+            <specialization name="husbandryMeadow" />
+        </type>
+    </placeableTypes>
+</modDesc>

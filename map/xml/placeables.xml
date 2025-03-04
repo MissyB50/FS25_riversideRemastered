@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeables version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/savegame_placeables.xsd">
+    <!-- main farm -->
+<!--     <placeable modName="FS25_cowPasture" filename="$moddir$FS25_cowPasture/xml/cowPasture.xml" uniqueId="placeable6da4e523ea012f1c2a5f76166bfe5136" position="-467.750 60.000 -201.750" rotation="0.00 -0.00 0.00" age="0.000000" price="80000.000000" farmId="1">
+        <configuration name="color" id="1" isActive="true"/>
+        <animatedObjects>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+        </animatedObjects>
+        <husbandry globalProductionFactor="0.000000" productionFactor="0.000000">
+            <storage farmId="1"/>
+        </husbandry>
+        <husbandryFence>
+            <fence>
+                <segment start="-487.750 60.000 -209.750" end="-493.315 60.172 -209.828" id="SEGMENT"/>
+                <segment start="-493.315 60.172 -209.828" end="-493.153 60.238 -344.749" id="SEGMENT"/>
+                <segment start="-493.153 60.238 -344.749" end="-368.959 60.012 -344.786" id="SEGMENT"/>
+                <segment start="-368.959 60.012 -344.786" end="-368.704 60.012 -209.597" id="SEGMENT"/>
+                <segment start="-368.704 60.012 -209.597" end="-419.577 60.000 -209.596" id="SEGMENT"/>
+            </fence>
+        </husbandryFence>
+        <manureHeap manureToDrop="0" manureToPick="0"/>
+        <husbandryMeadow>
+            <fillType name="GRASS_WINDROW" fillLevel="0.000000" capacity="74016.875000"/>
+        </husbandryMeadow>
+    </placeable> -->
+
+
+    <!-- bga -->
+    <!-- <placeable isPreplaced="true" uniqueId="preplaced_bga1mw_af2de644a023e731de69c3ac7c699c08"> -->
+        <!-- <customImage filename="data/placeables/planET/bga1mw/mapIcon_bga1mwUS.png"/> -->
+    <!-- </placeable> -->
+
+    <!-- vehicleDealer -->
+<!--     <placeable isPreplaced="true" uniqueId="preplaced_sellingStationVehicles_62b6b2c8dadf70c4cb99d2afcbe1e842">
+        <customImage filename="data/maps/mapUS/textures/buildings/vehicleTrader/mapIcon_vehicleTrader.png"/>
+    </placeable>
+    <placeable isPreplaced="true" uniqueId="preplaced_warehouseLogisticUS_50e6adca71b9959d380c07a433a37572">
+        <customImage filename="data/placeables/mapUS/warehouseLogisticUS/mapIcon_warehouseLogisticUS.png"/>
+    </placeable> -->
+
+    <!-- constructible/destroyable barns -->
+
+
+</placeables>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="baleShedStorage.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="10" filename="$data/maps/textures/shared/snow_diffuse.dds"/>
+    <File fileId="11" filename="$data/maps/textures/shared/snow_normal.dds"/>
+    <File fileId="8" filename="$data/maps/textures/shared/snow_specular.png"/>
+    <File fileId="14" filename="$data/placeables/rudolfHormann/cargoHangarBig/cargoHangarBig01_diffuse.dds"/>
+    <File fileId="15" filename="$data/placeables/rudolfHormann/cargoHangarBig/cargoHangarBig01_normal.dds"/>
+    <File fileId="16" filename="$data/placeables/rudolfHormann/cargoHangarBig/cargoHangarBig01_specular.dds"/>
+    <File fileId="1" filename="$data/placeables/rudolfHormann/cargoHangarBig/cargoHangarBig02_diffuse.dds"/>
+    <File fileId="2" filename="$data/placeables/rudolfHormann/cargoHangarBig/cargoHangarBig02_normal.dds"/>
+    <File fileId="3" filename="$data/placeables/rudolfHormann/cargoHangarBig/cargoHangarBig02_specular.dds"/>
+    <File fileId="18" filename="$data/shared/warningStripes_diffuse.png"/>
+    <File fileId="19" filename="$data/shared/warningStripes_normal.png"/>
+    <File fileId="20" filename="$data/shared/warningStripes_specular.png"/>
+    <File fileId="4" filename="../../../../../../../../Program Files (x86)/Farming Simulator 2025/data/shaders/buildingShader.xml"/>
+    <File fileId="12" filename="../../../../../../../../Program Files (x86)/Farming Simulator 2025/data/shaders/snowHeapShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="frame_mat" materialId="5" customShaderId="4">
+      <Texture fileId="14"/>
+      <Normalmap fileId="15"/>
+      <Glossmap fileId="16"/>
+    </Material>
+    <Material name="lambert1" materialId="36" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="roof_mat" materialId="6" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="snow_mat" materialId="7" customShaderId="12">
+      <Texture fileId="10"/>
+      <Normalmap fileId="11"/>
+      <Glossmap fileId="8"/>
+    </Material>
+    <Material name="warningStripes_mat" materialId="40">
+      <Texture fileId="18"/>
+      <Normalmap fileId="19"/>
+      <Glossmap fileId="20"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="baleShedStorage.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="baleShed" nodeId="12">
+      <TransformGroup name="clear" nodeId="13">
+        <TransformGroup name="transform" translation="-7 0 -10.5" nodeId="14">
+          <TransformGroup name="transform" translation="0 0 21" nodeId="15"/>
+          <TransformGroup name="transform" translation="14 0 0" nodeId="16"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="level" nodeId="17">
+        <TransformGroup name="transform" translation="-7 0 -10.5" nodeId="18">
+          <TransformGroup name="transform" translation="0 0 21" nodeId="19"/>
+          <TransformGroup name="transform" translation="14 0 0" nodeId="20"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="indoor" nodeId="21">
+        <TransformGroup name="transform" translation="-7 0 -10.5" nodeId="22">
+          <TransformGroup name="transform" translation="0 0 21" nodeId="23"/>
+          <TransformGroup name="transform" translation="14 0 0" nodeId="24"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="testAreas" nodeId="25">
+        <TransformGroup name="start" translation="-8 0 -11" nodeId="26">
+          <TransformGroup name="end" translation="16 9 22" nodeId="27"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="tipCol" nodeId="28">
+        <TransformGroup name="start" translation="-8 0 -11" nodeId="29">
+          <TransformGroup name="end" translation="16 0 22" nodeId="30"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="shed" nodeId="31">
+        <Shape name="roof" shapeId="1" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" clipDistance="600" nodeId="32" castsShadows="true" receiveShadows="true" materialIds="6">
+          <Shape name="snowMask" translation="0 7.14508 0" shapeId="2" clipDistance="600" nodeId="33" castsShadows="true" receiveShadows="true" materialIds="7" weatherRequiredMask="0x8"/>
+        </Shape>
+        <Shape name="frame" shapeId="3" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" clipDistance="600" nodeId="34" castsShadows="true" receiveShadows="true" materialIds="5"/>
+      </TransformGroup>
+      <TransformGroup name="objectStorage" nodeId="76">
+        <TransformGroup name="areas" nodeId="77">
+          <TransformGroup name="spawnAreaStart01" translation="7.73199 0 0.553998" nodeId="78">
+            <TransformGroup name="spawnAreaEnd01" translation="6.6155 0 10.8885" nodeId="79"/>
+          </TransformGroup>
+          <TransformGroup name="storageAreaStart01" translation="6.92016 0 -10.5" rotation="0 -90 0" nodeId="80">
+            <TransformGroup name="storageAreaEnd01" translation="21 0 13.84" nodeId="81"/>
+          </TransformGroup>
+        </TransformGroup>
+        <Shape name="objectTrigger" translation="11 0 -6.26087" rotation="0 90 0" shapeId="4" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x50000" nodeId="82" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="36"/>
+        <Shape name="playerTrigger" translation="8 0 0" shapeId="5" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x110000" nodeId="83" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="36">
+          <TransformGroup name="playerTriggerMarker" nodeId="84"/>
+        </Shape>
+        <Shape name="infoTrigger" shapeId="6" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x110000" nodeId="85" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="36"/>
+        <TransformGroup name="objectTriggerMarker" translation="11 0 -6" nodeId="90"/>
+        <Shape name="warningStripes" translation="10 0.01 6" rotation="0 90 0" shapeId="7" clipDistance="100" nodeId="91" castsShadows="true" receiveShadows="true" nonRenderable="true" terrainDecal="true" materialIds="40"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>
