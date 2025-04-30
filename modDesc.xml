@@ -40,7 +40,7 @@ Hauptmerkmale:
 - Günstiges Düngemittel und Herbizid ebenfalls erhältlich
 ]]></de>
     </description>
-    <iconFilename>icon_map.png</iconFilename>
+    <iconFilename>icon_map.dds</iconFilename>
     <multiplayer supported="true"/>
     <maps>
         <map id="SampleModMap" className="Mission00" filename="$dataS/scripts/mission00.lua" configFilename="map/xml/map.xml" defaultVehiclesXMLFilename="map/xml/vehicles.xml" defaultHandToolsXMLFilename="map/xml/handTools.xml" defaultPlaceablesXMLFilename="map/xml/placeables.xml" defaultItemsXMLFilename="map/xml/items.xml">
@@ -60,7 +60,7 @@ Es gibt 3 platzierbare Bereiche auf der Karte,
 2 neue Produktionen zum Einsatz,
 Maßgeschneiderte Kalkproduktion.</de>
             </description>
-            <iconFilename>map_pre.view.png</iconFilename>
+            <iconFilename>map_preview.dds</iconFilename>
         </map>
     </maps>
 

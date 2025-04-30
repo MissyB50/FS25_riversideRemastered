@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="dealershipFinal" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="i3dConverter" version="1.0"/>
+  </Asset>
+
+  <Files>
+  </Files>
+
+
+  <Materials>
+    <Material name="glass_mat" materialId="1" diffuseColor="0.8 0.8 0.8 1" specularColor="0.501961 1 0">
+    </Material>
+    <Material name="officeInternal_mat" materialId="2" diffuseColor="0.8 0.8 0.8 1" specularColor="0.501961 1 0">
+    </Material>
+    <Material name="shopMain02_mat" materialId="3" diffuseColor="0.8 0.8 0.8 1" specularColor="0.501961 1 0">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="dealershipFinal.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="door01" translation="-1.28784 6.0275 14.1875" rotation="0 -85 0" shapeId="1" nodeId="20" castsShadows="true" receiveShadows="true" materialIds="1"/>
+    <Shape name="door02" translation="-0.519962 6.0275 14.1875" rotation="-0 90 0" shapeId="2" nodeId="21" castsShadows="true" receiveShadows="true" materialIds="1"/>
+    <Shape name="door03" translation="4.925 6.0275 14.1875" rotation="-0 90 0" shapeId="3" nodeId="22" castsShadows="true" receiveShadows="true" materialIds="1"/>
+    <Shape name="doorGlassLeft" translation="9.9652 0.152556 21.1222" scale="0.025 1.275 0.6" shapeId="4" nodeId="23" castsShadows="true" receiveShadows="true" materialIds="1"/>
+    <Shape name="doorGlassRight" translation="9.9652 0.152556 19.873" scale="0.025 1.275 0.6" shapeId="4" nodeId="24" castsShadows="true" receiveShadows="true" materialIds="1"/>
+    <Shape name="doorLeft" translation="9.96525 1.43 21.7475" shapeId="5" nodeId="25" castsShadows="true" receiveShadows="true" materialIds="1"/>
+    <Shape name="doorRight" translation="9.96525 1.43 19.2481" rotation="-0 180 -0" shapeId="6" nodeId="26" castsShadows="true" receiveShadows="true" materialIds="1"/>
+    <Shape name="glass" shapeId="7" nodeId="27" castsShadows="true" receiveShadows="true" materialIds="1"/>
+    <Shape name="glassRoof" translation="0 8.47236 -7.5" scale="1.55 0.025 13.15" shapeId="8" nodeId="28" castsShadows="true" receiveShadows="true" materialIds="1"/>
+    <Shape name="glassStaircase" translation="2.22 1.2 24.1051" shapeId="9" nodeId="29" castsShadows="true" receiveShadows="true" materialIds="1"/>
+    <Shape name="guttering" shapeId="10" nodeId="30" castsShadows="true" receiveShadows="true" materialIds="1"/>
+    <Shape name="hormannDecal" shapeId="11" nodeId="31" castsShadows="true" receiveShadows="true" materialIds="1"/>
+    <Shape name="matelFrame" shapeId="12" nodeId="32" castsShadows="true" receiveShadows="true" materialIds="1"/>
+    <Shape name="shopMain01_vis" shapeId="13" nodeId="33" castsShadows="true" receiveShadows="true" materialIds="1,1,2"/>
+    <Shape name="shopMain02_vis" shapeId="14" nodeId="34" castsShadows="true" receiveShadows="true" materialIds="3,1,1"/>
+  </Scene>
+
+</i3D>

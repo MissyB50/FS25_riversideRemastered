@@ -1,6 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <placeables version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/savegame_placeables.xsd">
     <!-- main farm -->
+
+
+
+
+
+
+
+
 <!--     <placeable modName="FS25_cowPasture" filename="$moddir$FS25_cowPasture/xml/cowPasture.xml" uniqueId="placeable6da4e523ea012f1c2a5f76166bfe5136" position="-467.750 60.000 -201.750" rotation="0.00 -0.00 0.00" age="0.000000" price="80000.000000" farmId="1">
         <configuration name="color" id="1" isActive="true"/>
         <animatedObjects>
@@ -32,15 +40,13 @@
         <!-- <customImage filename="data/placeables/planET/bga1mw/mapIcon_bga1mwUS.png"/> -->
     <!-- </placeable> -->
 
-    <!-- vehicleDealer -->
-<!--     <placeable isPreplaced="true" uniqueId="preplaced_sellingStationVehicles_62b6b2c8dadf70c4cb99d2afcbe1e842">
-        <customImage filename="data/maps/mapUS/textures/buildings/vehicleTrader/mapIcon_vehicleTrader.png"/>
-    </placeable>
-    <placeable isPreplaced="true" uniqueId="preplaced_warehouseLogisticUS_50e6adca71b9959d380c07a433a37572">
-        <customImage filename="data/placeables/mapUS/warehouseLogisticUS/mapIcon_warehouseLogisticUS.png"/>
-    </placeable> -->
-
-    <!-- constructible/destroyable barns -->
 
 
+
+
+
+
+
+
+    <placeable filename="$mapdir$/map/placeables/sellingStationVehicles/sellingStationVehicles.xml" uniqueId="SSV" position="-542 60.355 -4" rotation="0 0 0"/>
 </placeables>

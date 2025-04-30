@@ -9,11 +9,11 @@
 
 <!-- BUYING POINTS -->
 <!--     <storeItem xmlFilename="$data/placeables/mapUS/warehouseLogisticUS/warehouseLogisticUS.xml"/> -->
-<!--     <storeItem xmlFilename="$data/placeables/mapUS/sellingPoints/sellingStationVehicles/sellingStationVehicles.xml"/> -->
+
 <!--     <storeItem xmlFilename="$data/placeables/mapUS/sellingPoints/gasStation/gasStation01.xml"/> -->
 
 <!-- PLACEABLES -->
-
+    <storeItem xmlFilename="map/placeables/sellingStationVehicles/sellingStationVehicles.xml"/>
 
 
 <!-- PLANTS -->
