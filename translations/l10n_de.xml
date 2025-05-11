@@ -3,5 +3,16 @@
 <l10n>
     <texts>
 <!--         <text name="CowShed" text="Selfmade CowShed" /> -->
+
+		<text name="fillType_silageMaize"> <de>Silage Mais</de>	</text>
+		<text name="fillType_humusactive"> <de>Humusaktiv</de>  </text>
+		<text name="fillType_rye"> 		   <de>Roggen</de>		</text>
+		<text name="filltype_triticale">   <de>Triticale</de>	</text>
+		<text name="filltype_spelt"> 	   <de>Dinkel</de>		</text>
+		<text name="fillType_vetchRye">    <de>Wickroggen</de>	</text>
+		<text name="fillType_greenRye">    <de>Grünroggen</de>	</text>
+		<text name="fillType_fieldGrass">  <de>Ackergras</de>	</text>
+		<text name="fillType_mustard"> 	   <de>Senf</de>		</text>
+
     </texts>
 </l10n>

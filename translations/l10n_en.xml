@@ -3,5 +3,38 @@
 <l10n>
     <texts>
         <text name="fillType_wholeCrop" text="Wholecrop" />
+		<text name="fillType_silageMaize"> 	<en>silage Maize</en> 	<de>Silage Mais</de>	</text>
+		<text name="fillType_humusactive"> 	<en>humusactive</en> 	<de>Humusaktiv</de>		</text>
+		<text name="fillType_rye"> 			<en>rye</en> 			<de>Roggen</de>			</text>
+		<text name="filltype_triticale"> 	<en>triticale</en> 		<de>Triticale</de>		</text>
+		<text name="filltype_spelt"> 		<en>spelt</en> 			<de>Dinkel</de>			</text>
+		<text name="fillType_vetchRye"> 	<en>vetch Rye</en> 		<de>Wickroggen</de>		</text>
+		<text name="fillType_greenRye"> 	<en>green Rye</en> 		<de>Grünroggen</de>		</text>
+		<text name="fillType_fieldGrass"> 	<en>field Grass</en> 	<de>Ackergras</de>		</text>
+		<text name="fillType_mustard"> 		<en>mustard</en> 		<de>Senf</de>			</text>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	</texts>
 </l10n>

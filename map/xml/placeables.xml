@@ -46,7 +46,8 @@
 
 
 
-
-
-    <placeable filename="$mapdir$/map/placeables/sellingStationVehicles/sellingStationVehicles.xml" uniqueId="SSV" position="-542 60.355 -4" rotation="0 0 0"/>
+    <placeable filename="$mapdir$/map/placeables/dealership/dealership.xml" uniqueId="shopMain_" position="-542 60.355 -4" rotation="0 90 0">
+        <customImage filename="data/placeables/dealership/mapIcon_shop.dds"/>
+    </placeable>
+    <placeable filename="$mapdir$/map/placeables/sellingStationVehicles/sellingStationVehicles.xml" uniqueId="SSV_" position="-542 60.355 -4" rotation="0 0 0"/>
 </placeables>

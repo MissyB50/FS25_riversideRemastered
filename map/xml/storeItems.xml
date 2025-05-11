@@ -14,7 +14,7 @@
 
 <!-- PLACEABLES -->
     <storeItem xmlFilename="map/placeables/sellingStationVehicles/sellingStationVehicles.xml"/>
-
+    <storeItem xmlFilename="map/placeables/dealership/dealership.xml"/>
 
 <!-- PLANTS -->
     <storeItem xmlFilename="$data/foliage/decoFoliage/paintable_decoGrassShortUS.xml" />

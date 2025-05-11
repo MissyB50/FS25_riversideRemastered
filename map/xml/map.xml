@@ -47,6 +47,174 @@
         <fruitTypeCategory name="MOWER">MEADOW</fruitTypeCategory>
     </fruitTypeCategories>
 
+    <precisionFarming> 
+	    <soilMap filename="data/infoLayer_soilMap.grle"/> 
+
+<!--         <fruitRequirements> 
+		    <fruitRequirement fruitTypeName="RYE" alwaysAllowFertilization="false" ignoreOverfertilization="false"> 
+		        <soil soilTypeIndex="1" targetLevel="140" reduction="140" yieldPotential="0.8"/> 
+		        <soil soilTypeIndex="2" targetLevel="180" reduction="160" yieldPotential="1.0"/> 
+		        <soil soilTypeIndex="3" targetLevel="200" reduction="180" yieldPotential="1.25"/> 
+		        <soil soilTypeIndex="4" targetLevel="160" reduction="160" yieldPotential="0.9"/> 
+		    </fruitRequirement> 
+		</fruitRequirements>
+
+        <fruitRequirements> 
+		    <fruitRequirement fruitTypeName="SILAGEMAIZE" alwaysAllowFertilization="false" ignoreOverfertilization="false"> 
+		        <soil soilTypeIndex="1" targetLevel="140" reduction="140" yieldPotential="0.8"/> 
+		        <soil soilTypeIndex="2" targetLevel="180" reduction="160" yieldPotential="1.0"/> 
+		        <soil soilTypeIndex="3" targetLevel="200" reduction="180" yieldPotential="1.25"/> 
+		        <soil soilTypeIndex="4" targetLevel="160" reduction="160" yieldPotential="0.9"/> 
+		    </fruitRequirement> 
+		</fruitRequirements>
+
+        <fruitRequirements> 
+		    <fruitRequirement fruitTypeName="VETCHRYE" alwaysAllowFertilization="false" ignoreOverfertilization="false"> 
+		        <soil soilTypeIndex="1" targetLevel="140" reduction="140" yieldPotential="0.8"/> 
+		        <soil soilTypeIndex="2" targetLevel="180" reduction="160" yieldPotential="1.0"/> 
+		        <soil soilTypeIndex="3" targetLevel="200" reduction="180" yieldPotential="1.25"/> 
+		        <soil soilTypeIndex="4" targetLevel="160" reduction="160" yieldPotential="0.9"/> 
+		    </fruitRequirement> 
+		</fruitRequirements>
+
+        <fruitRequirements> 
+		    <fruitRequirement fruitTypeName="GREENRYE" alwaysAllowFertilization="false" ignoreOverfertilization="false"> 
+		        <soil soilTypeIndex="1" targetLevel="140" reduction="140" yieldPotential="0.8"/> 
+		        <soil soilTypeIndex="2" targetLevel="180" reduction="160" yieldPotential="1.0"/> 
+		        <soil soilTypeIndex="3" targetLevel="200" reduction="180" yieldPotential="1.25"/> 
+		        <soil soilTypeIndex="4" targetLevel="160" reduction="160" yieldPotential="0.9"/> 
+		    </fruitRequirement> 
+		</fruitRequirements>
+
+        <fruitRequirements> 
+		    <fruitRequirement fruitTypeName="FIELDGRASS" alwaysAllowFertilization="false" ignoreOverfertilization="false"> 
+		        <soil soilTypeIndex="1" targetLevel="140" reduction="140" yieldPotential="0.8"/> 
+		        <soil soilTypeIndex="2" targetLevel="180" reduction="160" yieldPotential="1.0"/> 
+		        <soil soilTypeIndex="3" targetLevel="200" reduction="180" yieldPotential="1.25"/> 
+		        <soil soilTypeIndex="4" targetLevel="160" reduction="160" yieldPotential="0.9"/> 
+		    </fruitRequirement> 
+		</fruitRequirements>
+
+        <fruitRequirements> 
+		    <fruitRequirement fruitTypeName="HUMUSACTIVE" alwaysAllowFertilization="false" ignoreOverfertilization="false"> 
+		        <soil soilTypeIndex="1" targetLevel="140" reduction="140" yieldPotential="0.8"/> 
+		        <soil soilTypeIndex="2" targetLevel="180" reduction="160" yieldPotential="1.0"/> 
+		        <soil soilTypeIndex="3" targetLevel="200" reduction="180" yieldPotential="1.25"/> 
+		        <soil soilTypeIndex="4" targetLevel="160" reduction="160" yieldPotential="0.9"/> 
+		    </fruitRequirement> 
+		</fruitRequirements>
+
+        <fruitRequirements> 
+		    <fruitRequirement fruitTypeName="MUSTARD" alwaysAllowFertilization="false" ignoreOverfertilization="false"> 
+		        <soil soilTypeIndex="1" targetLevel="140" reduction="140" yieldPotential="0.8"/> 
+		        <soil soilTypeIndex="2" targetLevel="180" reduction="160" yieldPotential="1.0"/> 
+		        <soil soilTypeIndex="3" targetLevel="200" reduction="180" yieldPotential="1.25"/> 
+		        <soil soilTypeIndex="4" targetLevel="160" reduction="160" yieldPotential="0.9"/> 
+		    </fruitRequirement> 
+		</fruitRequirements>
+
+        <cropSensor fruitTypes="SILAGEMAIZE HUMUSACTIVE MUSTARD RYE VETCHRYE GREENRYE FIELDGRASS"/>
+
+        <seedRateMap> 
+            <fruitTypes> 
+                <fruitType name="SILAGEMAIZE"> <seedRates rates="280 560 1120" usages="0.03 0.05 0.07" />
+                    <soilTypes> 
+                        <soilType index="1" yields="0.875 1.000 1.125" /> 
+                        <soilType index="2" yields="0.950 1.000 1.000" /> 
+                        <soilType index="3" yields="1.000 1.000 1.000" /> 
+                        <soilType index="4" yields="0.777 1.000 1.111" /> 
+                    </soilTypes> 
+                </fruitType> 
+            </fruitTypes> 
+        </seedRateMap>
+
+        <seedRateMap> 
+            <fruitTypes> 
+                <fruitType name="HUMUSACTIVE"> <seedRates rates="188 376 752" usages="0.03 0.05 0.07" />
+                    <soilTypes> 
+                        <soilType index="1" yields="0.875 1.000 1.125" /> 
+                        <soilType index="2" yields="0.950 1.000 1.000" /> 
+                        <soilType index="3" yields="1.000 1.000 1.000" /> 
+                        <soilType index="4" yields="0.777 1.000 1.111" /> 
+                    </soilTypes> 
+                </fruitType> 
+            </fruitTypes> 
+        </seedRateMap>
+
+        <seedRateMap> 
+            <fruitTypes> 
+                <fruitType name="MUSTARD"> <seedRates rates="16 32 64" usages="0.03 0.05 0.07" />
+                    <soilTypes> 
+                        <soilType index="1" yields="0.875 1.000 1.125" /> 
+                        <soilType index="2" yields="0.950 1.000 1.000" /> 
+                        <soilType index="3" yields="1.000 1.000 1.000" /> 
+                        <soilType index="4" yields="0.777 1.000 1.111" /> 
+                    </soilTypes> 
+                </fruitType> 
+            </fruitTypes> 
+        </seedRateMap>
+
+        <seedRateMap> 
+            <fruitTypes> 
+                <fruitType name="RYE"> <seedRates rates="187 374 748" usages="0.03 0.05 0.07" />
+                    <soilTypes> 
+                        <soilType index="1" yields="0.875 1.000 1.125" /> 
+                        <soilType index="2" yields="0.950 1.000 1.000" /> 
+                        <soilType index="3" yields="1.000 1.000 1.000" /> 
+                        <soilType index="4" yields="0.777 1.000 1.111" /> 
+                    </soilTypes> 
+                </fruitType> 
+            </fruitTypes> 
+        </seedRateMap>
+
+        <seedRateMap> 
+            <fruitTypes> 
+                <fruitType name="VETCHRYE"> <seedRates rates="75 150 300" usages="0.03 0.05 0.07" />
+                    <soilTypes> 
+                        <soilType index="1" yields="0.875 1.000 1.125" /> 
+                        <soilType index="2" yields="0.950 1.000 1.000" /> 
+                        <soilType index="3" yields="1.000 1.000 1.000" /> 
+                        <soilType index="4" yields="0.777 1.000 1.111" /> 
+                    </soilTypes> 
+                </fruitType> 
+            </fruitTypes> 
+        </seedRateMap>
+
+        <seedRateMap> 
+            <fruitTypes> 
+                <fruitType name="FIELDGRASS"> <seedRates rates="26 52 104" usages="0.03 0.05 0.07" />
+                    <soilTypes> 
+                        <soilType index="1" yields="0.875 1.000 1.125" /> 
+                        <soilType index="2" yields="0.950 1.000 1.000" /> 
+                        <soilType index="3" yields="1.000 1.000 1.000" /> 
+                        <soilType index="4" yields="0.777 1.000 1.111" /> 
+                    </soilTypes> 
+                </fruitType> 
+            </fruitTypes> 
+        </seedRateMap>
+
+        <seedRateMap> 
+            <fruitTypes> 
+                <fruitType name="GREENRYE"> <seedRates rates="187 374 748" usages="0.03 0.05 0.07" />
+                    <soilTypes> 
+                        <soilType index="1" yields="0.875 1.000 1.125" /> 
+                        <soilType index="2" yields="0.950 1.000 1.000" /> 
+                        <soilType index="3" yields="1.000 1.000 1.000" /> 
+                        <soilType index="4" yields="0.777 1.000 1.111" /> 
+                    </soilTypes> 
+                </fruitType> 
+            </fruitTypes> 
+        </seedRateMap>
+
+        <npcTramlines fruitTypes="MUSTARD VETCHRYE"/>
+
+        <subsidies> 
+            <coverCropBonus> 
+                <fruitType name="HUMUSACTIVE MUSTARD VETCHRYE" bonusPerHa="200 150 100" /> 
+            </coverCropBonus> 
+        </subsidies> -->
+    </precisionFarming>
+
     <additionalFiles>
         <additionalFile filename="$data/shared/materialHolders/tensionBelts/tensionBeltMaterialHolder.i3d" />
         <additionalFile filename="$data/shared/materialHolders/tireTrackMaterialHolder.i3d" />
@@ -54,12 +222,7 @@
         <additionalFile filename="$data/fillPlanes/fillPlane_materialHolder.i3d" />
         <additionalFile filename="$data/objects/bales/wrapBale_materialHolder.i3d" />
         <additionalFile filename="$data/effects/effects.xml" />
-<!--         <fruitType filename="map/xml/fruitTypes.xml"/> -->
-<!--     <fillTypes="map/xml/fillTypes.xml"/> -->
     </additionalFiles>
-
-<!--     <fruitType filename="map/xml/fruitTypes.xml"/> -->
-
 
     <!-- add all foliage layers that are not fruits. You need to define these foliage layers to be able to remove them with a cultivator or plow -->
     <decoFoliages>
